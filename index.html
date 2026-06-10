@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSLST 文件发布站</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7f9;
+      --panel: #ffffff;
+      --ink: #1f2933;
+      --muted: #5f6c7b;
+      --line: #d8e0e8;
+      --primary: #126f75;
+      --primary-dark: #0b5358;
+      --accent: #9a5a24;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wrap {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .masthead {
+      padding: 30px 0 24px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .site-url {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      word-break: break-all;
+    }
+
+    main {
+      padding: 24px 0 40px;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    .file-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .file-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 18px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .file-name {
+      margin: 0 0 6px;
+      font-size: 16px;
+      font-weight: 700;
+      word-break: break-word;
+    }
+
+    .file-meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 15px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: var(--primary);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--primary-dark);
+      outline: none;
+    }
+
+    .button.secondary {
+      background: var(--panel);
+      border-color: var(--line);
+      color: var(--primary-dark);
+    }
+
+    .button.secondary:hover,
+    .button.secondary:focus-visible {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: #fffaf5;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 14px 16px;
+      color: var(--muted);
+      background: #eef5f6;
+      border-left: 4px solid var(--primary);
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .file-row {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        justify-content: stretch;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap masthead">
+      <h1>GSLST 文件发布站</h1>
+      <p class="site-url">公开访问地址：https://gslst.github.io/</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2 class="section-title">公开文件</h2>
+      <div class="file-list">
+        <article class="file-row">
+          <div>
+            <h3 class="file-name">能动学院三长三融合研究生教学成果奖申请书附件-20260610.pdf</h3>
+            <p class="file-meta">PDF 文件 · 点击“打开”可在浏览器中直接查看</p>
+          </div>
+          <div class="actions">
+            <a class="button" href="files/能动学院三长三融合研究生教学成果奖申请书附件-20260610.pdf" target="_blank" rel="noopener">打开</a>
+            <a class="button secondary" href="files/能动学院三长三融合研究生教学成果奖申请书附件-20260610.pdf" download>下载</a>
+          </div>
+        </article>
+      </div>
+      <p class="notice">本页面用于公开发布文件。访问者只能查看或下载文件，文件管理由 GitHub 账号 GSLST 在仓库后台完成。</p>
+    </div>
+  </main>
+</body>
+</html>
